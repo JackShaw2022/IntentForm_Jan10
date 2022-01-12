@@ -35,5 +35,4 @@ class MainActivity : AppCompatActivity() {
         // Starts next activity with intent.
         startActivity(intent)
     }
-
 }

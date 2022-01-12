@@ -1,6 +1,7 @@
 package com.example.intentform_jan10
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.intentform_jan10.databinding.ActivityThirdBinding
 
@@ -8,11 +9,12 @@ class ThirdActivity: AppCompatActivity() {
 
     private lateinit var binding: ActivityThirdBinding
 
+    var txtString: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         with(binding) {
             // Grabbing extras from intent
             firstNameTv.text = intent.getStringExtra(FIRST_NAME_EXTRA)
